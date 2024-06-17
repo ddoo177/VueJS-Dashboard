@@ -1,16 +1,16 @@
 <script setup>
 
-import { onMounted, ref } from "vue";
+import { onMounted, ref } from 'vue'
 
-const users = ref([]);
+const users = ref([])
 
 onMounted(async () => {
     try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/users');
-        const data = await response.json();
-        users.value = data;
+        const response = await fetch('https://jsonplaceholder.typicode.com/users')
+        const data = await response.json()
+        users.value = data
     } catch (e) {
-        console.error(e);
+        console.error(e)
     }
 });
 
@@ -42,6 +42,7 @@ onMounted(async () => {
 </template>
 
 <style scoped>
+
 .table-title {
     font-size: 20px;
     font-weight: 600;
@@ -60,7 +61,8 @@ onMounted(async () => {
 
 .user-table th,
 .user-table td {
-    padding: 20px 30px;
+    padding: 40px 30px;
+    font-size: 17px;
     text-align: left;
 }
 
@@ -70,4 +72,5 @@ onMounted(async () => {
     background: #65445B;
     z-index: 1;
 }
+
 </style>
