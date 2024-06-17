@@ -1,9 +1,11 @@
 <script setup>
 
+import  DashBoard  from '../Dashboard/Dashboard.vue'
+ 
 </script>
 
 <template>
-    <h1 class="title">Analytic</h1>
+    <DashBoard/>
 </template>
 
 <style scoped>

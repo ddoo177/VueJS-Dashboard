@@ -8,7 +8,7 @@ import { createWebHistory } from "vue-router";
 import { createRouter } from "vue-router";
 
 const routes = [
-  { path: "/", redirect: '/dashboard' },
+  { path: "/", redirect: "/dashboard" },
   { path: "/dashboard", component: Dashboard },
   { path: "/user", component: User },
   { path: "/product", component: Product },
@@ -22,4 +22,4 @@ const router = createRouter({
   routes,
 });
 
-export default router
+export default router;

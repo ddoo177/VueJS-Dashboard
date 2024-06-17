@@ -6,7 +6,7 @@ const users = ref([])
 
 onMounted(async () => {
     try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/users')
+        const response = await fetch('https://jsonplaceholder.typicode.com/users');
         const data = await response.json()
         users.value = data
     } catch (e) {
@@ -59,11 +59,14 @@ onMounted(async () => {
     border-collapse: collapse;
 }
 
-.user-table th,
-.user-table td {
-    padding: 40px 30px;
-    font-size: 17px;
+.user-table th{
+    padding: 20px 30px;
     text-align: left;
+}
+
+.user-table td {
+    padding: 35px 30px;
+
 }
 
 .user-table thead th {

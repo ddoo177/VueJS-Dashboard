@@ -49,3 +49,11 @@ body {
   background: linear-gradient(to top, #eb70c2, #1D1F20);
   border-radius: 20px;
 }
+
+@keyframes fadeIn {
+  to {
+  scale: 1.3;
+  opacity: 1; 
+  filter: drop-shadow(0.6rem 0.6rem 2rem #925b80);
+  }
+}

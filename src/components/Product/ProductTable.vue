@@ -76,10 +76,19 @@ onMounted(async () => {
     z-index: 1;
 }
 
+
 .product-table td img {
-    width: 100px;
+  filter: drop-shadow(0.3rem 0.2rem 1rem #925b80);
+  width: 100px;
+  animation: fadeIn 2s  forwards;
+  opacity: 0;
 }
 
-/* .product-table */
+@keyframes fadeIn {
+  to {
+  opacity: 1; 
+  filter: drop-shadow(0.6rem 0.6rem 2rem #925b80);
+  }
+}
 
 </style>
