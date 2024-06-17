@@ -1,6 +1,6 @@
 <script setup>
-import CardNumberanalytic from './card-number-analytic.vue';
-import GeoChart from './geo-chart.vue';
+import CardNumberanalytic from './CardNumber.vue';
+import GeoChart from './GeoChart.vue';
 
 </script>
 

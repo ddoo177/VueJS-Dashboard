@@ -7,20 +7,21 @@ import UserTable from '../User/UserTable.vue'
 <template>
 
     <h1 class="title">User Management</h1>
+
     <div class="user-table">
-        <UserTable/>
+        <UserTable />
     </div>
-    
+
 </template>
 
 <style scoped>
 
 .user-table {
     width: 100%;
-    max-height: 600px;
+    max-height: 700px;
     overflow-y: auto;
     background: var(--secondary-color);
     border-radius: 20px;
-}  
+}
 
 </style>

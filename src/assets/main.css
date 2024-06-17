@@ -6,6 +6,7 @@
   --secondary-color: #1D1F20;
   --light-secondary-color: linear-gradient(to right, #925b80, #87598a, #735574, #574958, #3d3c3d);
   --text-color: #D6D5D6;
+  --main-color: #925b80;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
 }

@@ -32,7 +32,7 @@ const changePassword = () => {
   <h1 class="title">Settings</h1>
   <div class="setting-container">
     <div class="setting-img">
-      <img src="../../assets/astronaut2.png" alt="" class="image">
+      <img src="../../assets/images/astronaut2.png" alt="" class="image">
     </div>
     <div class="setting-form">
       <section class="section">
@@ -164,7 +164,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #72375e;
+  opacity: 0.8;
 }
 
 select {

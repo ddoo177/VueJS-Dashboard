@@ -76,11 +76,14 @@ onMounted(async () => {
     z-index: 1;
 }
 
+tr:hover {
+    background: #18191a;
+}
 
 .product-table td img {
   filter: drop-shadow(0.3rem 0.2rem 1rem #925b80);
   width: 100px;
-  animation: fadeIn 2s  forwards;
+  animation: fadeIn 2.5s  forwards;
   opacity: 0;
 }
 

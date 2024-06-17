@@ -29,7 +29,7 @@
       </div>
     </div>
     <div class="report-img">
-      <img src="../../assets/astronaut.png" alt="" class="image">
+      <img src="../../assets/images/astronaut.png" alt="" class="image">
     </div>
   </div>
 </template>
@@ -95,11 +95,12 @@ textarea {
   color: white;
   cursor: pointer;
   border: none;
+  width: fit-content;
   border-radius: 20px;
 }
 
 .report_form button:hover {
-  background-color: #72375e;
+  opacity: 0.8;
 }
 
 .report-img {

@@ -6,9 +6,9 @@ const users = ref([])
 
 onMounted(async () => {
     try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/users');
+        const response = await fetch('https://dummyjson.com/users');
         const data = await response.json()
-        users.value = data
+        users.value = data.users
     } catch (e) {
         console.error(e)
     }
@@ -17,24 +17,23 @@ onMounted(async () => {
 </script>
 
 <template>
-
     <table class="user-table">
         <thead>
             <tr>
+                <th class="table-title"></th>
                 <th class="table-title">Name</th>
                 <th class="table-title">Email</th>
                 <th class="table-title">Address</th>
                 <th class="table-title">Phone</th>
-                <th class="table-title">Website</th>
             </tr>
         </thead>
         <tbody>
             <tr v-for="user in users" :key="user.id">
-                <td>{{ user.name }}</td>
+                <td><img v-bind:src="user.image"></td>
+                <td>{{ user.firstName + ' ' + user.lastName }}</td>
                 <td>{{ user.email }}</td>
-                <td>{{ user.address.city }}</td>
+                <td>{{ user.address.address }}</td>
                 <td>{{ user.phone }}</td>
-                <td>{{ user.website }}</td>
             </tr>
         </tbody>
     </table>
@@ -64,6 +63,10 @@ onMounted(async () => {
     text-align: left;
 }
 
+tr:hover {
+    background: #18191a;
+}
+
 .user-table td {
     padding: 35px 30px;
 
@@ -74,6 +77,14 @@ onMounted(async () => {
     top: 0;
     background: #65445B;
     z-index: 1;
+}
+
+.user-table td img {
+  filter: drop-shadow(0.3rem 0.2rem 1rem #925b80);
+  width: 100px;
+  animation: fadeIn 2s  forwards;
+  opacity: 0;
+  padding-left: 20px;
 }
 
 </style>

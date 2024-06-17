@@ -24,6 +24,7 @@ import Category from './Category.vue'
 }
 
 .side-bar-top:hover {
+    opacity: 0.8;
     cursor: pointer;
 }
 
